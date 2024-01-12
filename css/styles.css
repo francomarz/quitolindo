@@ -1,0 +1,62 @@
+/*estilos Quito lindo*/
+a {
+    color: #241E20;
+}
+a:hover {
+    color: #747474;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*estructura*/
+.container {
+    width: 1200px;
+    margin: auto auto;
+}
+
+.odd-background {
+    background-color: #241E20;
+    color: #FFFFFF;
+}
+
+.even-background {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+/*espaciado*/
+
+
+
+/*navegación*/
+.nav li {
+    display: inline;
+    padding-left: 20px;
+}
+.nav li a {
+    font-weight: bold;
+}
+
+/*botones*/
+.btn {
+    display: block;
+    padding: 10px 30px 10px 30px;
+    width: max-content;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.btn-black {
+    border:solid 1px #241E20;
+}
+.btn-white {
+    border:solid 1px #FFFFFF;
+    color: #FFFFFF;
+}
+/*imagen*/
+.img-responsive {
+    width: 100%;
+}
