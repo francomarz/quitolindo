@@ -3,92 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../favicon.png">
     <title>Quito Lindo | Experiencias</title>
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img src="../img/logo-quito-lindo.png" alt="logo-quito-lindo" width="200" /></a>
-        <span><a href="../login.html">Iniciar Sesión</a></span> 
-        <span><a href="#"><strong>Registrarme</strong></a></span>
-        <nav id="nav-principal">
-            <ul>
-                <li><a href="../pages/atractivos.html">Atractivos</a></li>
-                <li><a href="../pages/rutas.html">Rutas</a></li>
-                <li><a href="../pages/experiencias.html">Experiencias</a></li>
+    <header class="container odd-row">
+        <div class="col">
+            <a href="../index.html"><img src="../img/logo-quito-lindo.png" alt="logo-quito-lindo" class="logo img-responsive" /></a>
+        </div>
+        <div class="col">
+            <ul class="nav nav-secundaria">
+                <li><a href="../login.html">Iniciar Sesión</a></li>
+                <li><a href="#"><strong>Registrarme</strong></a></li>
             </ul>
-        </nav>
-        <ul id="breadcrumb">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="experiencias.html">Experiencias</a></li>
-            <li>Compartir experiencia</li>
-        </ul>
+            <nav id="nav-principal">
+                <ul class="nav">
+                    <li><a href="atractivos.html">Atractivos</a></li>
+                    <li><a href="rutas.html">Rutas</a></li>
+                    <li><a href="experiencias.html" class="active">Experiencias</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <h1>Compartir experiencia</h1>
-    <p>Agradecemos que compartas tu experiencia de viaje con otras personas, esto ayuda a que otros visitantes puedan tener más claro que visitar.</p>
-    <form action="form-experiencia.html" method="post">
-        <fieldset>
-            <legend>Ingresa la siguiente información</legend>
-            <div>
-                <label for="email">Correo electrónico:</label><br>
-                <input type="email" id="email" name="email" placeholder="usuario@email.com" required>
-            </div>
-            <div>
-                <label for="categoria">Selecciona una categoría de experiencia:</label><br>
-                <select id="categoria" name="categoria" required>
-                    <option value="hospedaje">Hospedaje</option>
-                    <option value="transporte">Transporte</option>
-                    <option value="bares-discotecas">Bares y discotecas</option>
-                    <option value="zonas-turisticas">Zonas turísticas</option>
-                </select>
-            </div>
-            <div>
-                <label for="imagen">Cargar imagen del lugar:</label><br>
-                <input type="file" id="imagen" name="imagen" accept=".jpg, .jpeg, .png">
-            </div>
-            <div>
-                <label for="web">Página Web del lugar que visitaste (opcional):</label><br>
-                <input type="url" id="web" name="web" placeholder="Dirección Web">
-            </div>
-            <div>
-                <label for="ubicacion">Ubicación del lugar en Google Maps (opcional):</label><br>
-                <input type="url" id="ubicacion" name="ubicacion" placeholder="Ubicacion Google Maps">
-            </div>
-            <div>
-                <label for="valoracion">Valoración:</label><br>
-                <select id="valoracion" name="valoracion" required>
-                    <option value="5">5 estrellas</option>
-                    <option value="4">4 estrellas</option>
-                    <option value="3">3 estrellas</option>
-                    <option value="2">2 estrellas</option>
-                    <option value="1">1 estrella</option>
-                </select>
-            </div>
-            <div>
-                <label for="resena">Describe tu experiencia:</label><br><small>Cuéntanos con detalle qué cosas fueron geniales y qué cosas no lo fueron.</small><br>
-                <textarea name="resena" required></textarea>
-            </div>
+    <section class="container">
+        <h1>Compartir experiencia</h1>
+        <p>Agradecemos que compartas tu experiencia de viaje con otras personas, esto ayuda a que otros visitantes puedan tener más claro que visitar.</p>
+        <form action="form-experiencia.html" method="post">
+            <fieldset>
+                <legend>Ingresa la siguiente información</legend>
+                <div>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="usuario@email.com" autofocus required>
+                </div>
+                <div>
+                    <label for="categoria">Selecciona una categoría de experiencia:</label><br>
+                    <select id="categoria" name="categoria" required>
+                        <option value="hospedaje">Hospedaje</option>
+                        <option value="transporte">Transporte</option>
+                        <option value="bares-discotecas">Bares y discotecas</option>
+                        <option value="zonas-turisticas">Zonas turísticas</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="imagen">Cargar imagen del lugar:</label><br>
+                    <input type="file" id="imagen" name="imagen" accept=".jpg, .jpeg, .png">
+                </div>
+                <div>
+                    <label for="web">Página Web del lugar que visitaste (opcional):</label><br>
+                    <input type="url" id="web" name="web" placeholder="Dirección Web">
+                </div>
+                <div>
+                    <label for="ubicacion">Ubicación del lugar en Google Maps (opcional):</label><br>
+                    <input type="url" id="ubicacion" name="ubicacion" placeholder="Ubicacion Google Maps">
+                </div>
+                <div>
+                    <label for="valoracion">Valoración:</label><br>
+                    <select id="valoracion" name="valoracion" required>
+                        <option value="5">5 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="1">1 estrella</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="resena">Describe tu experiencia:</label>
+                    <p><small>Cuéntanos con detalle qué cosas fueron geniales y qué cosas no lo fueron.</small></p>
+                    <textarea name="resena" required></textarea>
+                </div>
+    
+                <div>
+                    <input type="checkbox" id="privacidad" name="privacidad" value="si" required>
+                    <label for="privacidad"> Acepto la <a href="#" target="_blank">política de privacidad</a> sobre los datos recopilados mediante este formulario</label><br>
+                </div>
+    
+                <input type="submit" value="Enviar">
+              </fieldset>
+          </form>
+    </section>
 
-            <div>
-                <input type="checkbox" id="privacidad" name="privacidad" value="si" required>
-                <label for="privacidad"> Acepto la <a href="#" target="_blank">política de privacidad</a> sobre los datos recopilados mediante este formulario</label><br>
+    <footer class="container footer bg-dark">
+        <img src="../img/footer.jpg" alt="footer" class="img-responsive" />
+        <div class="half-row">
+            <div class="col">
+                <p>Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
             </div>
-
-            <input type="submit" value="Enviar">
-          </fieldset>
-      </form>
-    <p><small><a href="#">Olvidé mi contraseña</a> | <a href="#">Registrarme</a></small></p>
-
-    <footer>
-        <img src="../img/footer.jpg" alt="footer" />
-        <p>Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
-        <ul>
-            <li><a href="#" target="_blank" title="Instagram"><img src="../img/instagram.png" alt="Instagram" width="50" /></a></li>
-            <li><a href="#" target="_blank" title="Facebook"><img src="../img/facebook.png" alt="Facebook" width="50" /></a></li>
-            <li><a href="#" target="_blank" title="X"><img src="../img/X-black.png" alt="X" width="50" /></a></li>
-        </ul>
-        <p>Tecnologías Web - 2023</p>
+            <div class="col text-center">
+                <p>Visita nuestras redes sociales</p>
+                <ul class="nav">
+                    <li><a href="#" target="_blank" title="Instagram"><img src="../img/instagram.png" alt="Instagram" width="50" /></a></li>
+                    <li><a href="#" target="_blank" title="Facebook"><img src="../img/facebook.png" alt="Facebook" width="50" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center"><small>Tecnologías Web - 2023</small></p>
     </footer>
 </body>
 </html>

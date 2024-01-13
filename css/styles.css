@@ -1,62 +1,182 @@
 /*estilos Quito lindo*/
-a {
-    color: #241E20;
-}
-a:hover {
-    color: #747474;
-}
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
+a {color: #241E20;}
+a:hover {color: #747474;}
+body {font-family: Arial, Helvetica, sans-serif;}
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: bold;
 }
+p {line-height: 1.5em;}
+.resume {font-size: 0.9em;}
 
 /*estructura*/
+.grid {display: grid;}
 .container {
-    width: 1200px;
+    display: grid;
+    max-width: 960px;
     margin: auto auto;
 }
-
-.odd-background {
-    background-color: #241E20;
-    color: #FFFFFF;
+.odd-row {
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 1em;
 }
-
-.even-background {
-    background-color: #FFFFFF;
-    color: #000000;
+.even-row {
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 1em;
 }
-/*espaciado*/
-
-
+.half-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-between;
+    padding: 2em;
+}
+.col {display: block;}
+aside {
+    border-right: solid 1px #CCC;
+    height: 100%;
+}
+footer {
+    font-size: 0.6em;
+    letter-spacing: .3em;
+}
 
 /*navegación*/
-.nav li {
-    display: inline;
-    padding-left: 20px;
+.nav li {display: inline;}
+#nav-principal .nav {
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: right;
 }
-.nav li a {
+#nav-principal .nav li {padding-left: 3em;}
+.nav-secundaria {
+    font-size: 0.8em;
+    text-align: right;
+    border-bottom: solid 1px #CCC;
+    padding-bottom: 10px;
+}
+.nav-secundaria li {padding-left: 2em;}
+ul.nav-aside {padding-left: 0px;}
+.nav-aside li {
+    list-style: none;
+    line-height: 3.5em;
+    text-transform: uppercase;
     font-weight: bold;
 }
+a.active {color: #922E2E;}
 
 /*botones*/
 .btn {
     display: block;
     padding: 10px 30px 10px 30px;
+    margin: 10px;
     width: max-content;
     border-radius: 10px;
     text-transform: uppercase;
 }
-.btn-black {
-    border:solid 1px #241E20;
-}
+.btn-black {border:solid 1px #241E20;}
 .btn-white {
     border:solid 1px #FFFFFF;
     color: #FFFFFF;
 }
 /*imagen*/
-.img-responsive {
-    width: 100%;
+.img-responsive {width: 100%;}
+.img-rounded {border-radius: 50%;}
+
+/*fondos*/
+.bg-dark {
+    background-color: #241E20;
+    color: #FFFFFF;
+}
+.bg-dark a {color: #FFFFFF;}
+.bg-dark a:hover {color: #747474;}
+.bg-dark a.active {color: #C1272D;}
+
+.bg-white {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.boxed {
+    border: solid 1px #CCC;
+    border-radius: 1em;
+    padding: 1em;
+}
+.shadow {box-shadow: 3px 3px 3px #CCC;}
+.stars {
+    color: #FFDB5A;
+}
+
+/*espacios*/
+.p-1 {padding: 1em;}
+.p-2 {padding: 2em;}
+.p-3 {padding: 2em;}
+.m-1 {margin: 1em;}
+.m-2 {margin: 2em;}
+.m-3 {margin: 2em;}
+.py-1 {padding: 1em 0em 1em 0em;}
+.py-2 {padding: 2em 0em 2em 0em;}
+.py-3 {padding: 3em 0em 3em 0em;}
+.my-1 {margin: 1em 0em 1em 0em;}
+.my-2 {margin: 2em 0em 2em 0em;}
+.my-3 {margin: 3em 0em 3em 0em;}
+
+/*alineación*/
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-justify {text-align: justify;}
+.subtitle {
+    font-size: 50%;
+    letter-spacing: .5em;
+    padding-left: 10%;
+}
+
+/*formularios*/
+fieldset {
+    border-radius: 1em;
+    border: solid 1px #CCC;
+    padding: 1.5em;
+}
+legend {
+    font-size: small;
+}
+label {
+    display: block;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+input, textarea, select {
+    padding: 0.8em;
+    border-radius: 5px;
+    border: solid 1px #CCC;
+    margin-bottom: 2em;
+}
+
+/*responsive - usabilidad*/
+@media only screen and (max-width: 600px) {
+    h1, h2, h3, h4, h5, h6 {text-align: center;}
+    aside {
+        border-right: none;
+        text-align: center;
+    }
+    p {padding: 1em;}
+    .logo {
+        display: block;
+        max-width: 50%;
+        margin: auto auto;
+    }
+    .odd-row, .even-row {
+        grid-template-columns: 1fr;
+        padding-bottom: 2em;
+    }
+    .btn {margin: auto auto;}
+    .img-rounded {
+        display: block;
+        margin: auto auto;
+    }
+    .stars {
+        text-align: center;
+    }
 }

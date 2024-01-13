@@ -8,51 +8,73 @@
     <title>Quito Lindo | Inicio</title>
 </head>
 <body>
-    <header class="container">
-        <a href="./index.html"><img src="img/logo-quito-lindo.png" alt="logo-quito-lindo" width="200" /></a>
-        <span><a href="login.html">Iniciar Sesión</a></span> 
-        <span><a href="#"><strong>Registrarme</strong></a></span>
-        <nav id="nav-principal">
-            <ul class="nav">
-                <li><a href="pages/atractivos.html">Atractivos</a></li>
-                <li><a href="pages/rutas.html">Rutas</a></li>
-                <li><a href="pages/experiencias.html">Experiencias</a></li>
+    <header class="container odd-row">
+        <div class="col">
+            <a href="./index.html"><img src="img/logo-quito-lindo.png" alt="logo-quito-lindo" class="logo img-responsive" /></a>
+        </div>
+        <div class="col">
+            <ul class="nav nav-secundaria">
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="#"><strong>Registrarme</strong></a></li>
             </ul>
-        </nav>
-        <ul id="breadcrumb">
-            <li><a href="./index.html">Inicio</a></li>
-        </ul>
+            <nav id="nav-principal">
+                <ul class="nav">
+                    <li><a href="pages/atractivos.html">Atractivos</a></li>
+                    <li><a href="pages/rutas.html">Rutas</a></li>
+                    <li><a href="pages/experiencias.html">Experiencias</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="container odd-background">
-        <img src="img/seccion-atractivos-turisticos.jpg" alt="sección atractivos turísticos" width="300"/>
-        <h1>Atractivos <br><small>turísticos</small></h1>
-        <p>Aquí podrá descubrir los lugares más hermosos y mágicos de la Ciudad de Quito. Conocerá un poco de su historia, ubicación e información interesante que cautivará su atención.</p>
-        <a href="#" class="btn btn-white">Visitar</a>
+
+    <section class="container odd-row bg-dark">
+        <div class="col">
+            <img src="img/seccion-atractivos-turisticos.jpg" alt="sección atractivos turísticos" class="img-responsive"/>
+        </div>
+        <div class="col">
+            <h1>Atractivos <br><small class="subtitle">turísticos</small></h1>
+            <p>Aquí podrá descubrir los lugares más hermosos y mágicos de la Ciudad de Quito. Conocerá un poco de su historia, ubicación e información interesante que cautivará su atención.</p>
+            <a href="pages/atractivos.html" class="btn btn-white">Visitar</a>
+        </div>
     </section>
-    
-    <section class="container even-background">
-        <img src="img/seccion-rutas-aventura.jpg" alt="sección rutas de aventura" width="300"/>
-        <h1>Rutas <br><small>de aventura</small></h1>
-        <p>Rutas de aventura le permitirá descubrir Quito de una manera guiada y en función de la ventura que desea vivir. Visitas culturales, la ruta de la Iglesias, Quito Colonial, Quito moderno. Usted elige la ruta.</p>
-        <a href="#" class="btn btn-black">Recorrer</a>
+
+    <section class="container even-row bg-white">
+        <div class="col">
+            <h1 class="text-right">Rutas <br><small class="subtitle">de aventura</small></h1>
+            <p>Rutas de aventura le permitirá descubrir Quito de una manera guiada y en función de la ventura que desea vivir. Visitas culturales, la ruta de la Iglesias, Quito Colonial, Quito moderno. Usted elige la ruta.</p>
+            <a href="#" class="btn btn-black">Recorrer</a>
+        </div>
+        <div class="col">
+            <img src="img/seccion-rutas-aventura.jpg" alt="sección rutas de aventura" class="img-responsive"/>
+        </div>
     </section>
-    
-    <section class="container odd-background">
-        <img src="img/seccion-experiencias-compartidas.jpg" alt="sección experiencias compartidas" width="300"/>
-        <h1>Experiencias <br><small>compartidas</small></h1>
-        <p>¿Desea compartir su experiencia o conocer la de otros visitantes? Aquí podrá encoentrar opiniones y recomendaciones de otros turistas que le ayudarán a conocer mucho más la Ciudad de Quito.</p>
-        <a href="#" class="btn btn-white">Probar</a>
+
+    <section class="container odd-row bg-dark">
+        <div class="col">
+            <img src="img/seccion-experiencias-compartidas.jpg" alt="sección experiencias compartidas" class="img-responsive"/>
+        </div>
+        <div class="col">
+            <h1>Experiencias <br><small class="subtitle">compartidas</small></h1>
+            <p>¿Desea compartir su experiencia o conocer la de otros visitantes? Aquí podrá encoentrar opiniones y recomendaciones de otros turistas que le ayudarán a conocer mucho más la Ciudad de Quito.</p>
+            <a href="#" class="btn btn-white">Probar</a>
+        </div>
     </section>
-    
-    <footer class="container even-background">
+
+    <footer class="container footer bg-dark">
         <img src="img/footer.jpg" alt="footer" class="img-responsive" />
-        <p>Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
-        <ul>
-            <li><a href="#" target="_blank" title="Instagram"><img src="img/instagram.png" alt="Instagram" width="50" /></a></li>
-            <li><a href="#" target="_blank" title="Facebook"><img src="img/facebook.png" alt="Facebook" width="50" /></a></li>
-            <li><a href="#" target="_blank" title="X"><img src="img/X-black.png" alt="X" width="50" /></a></li>
-        </ul>
-        <p>Tecnologías Web - 2023</p>
+        <div class="half-row">
+            <div class="col">
+                <p>Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
+            </div>
+            <div class="col text-center">
+                <p>Visita nuestras redes sociales</p>
+                <ul class="nav">
+                    <li><a href="#" target="_blank" title="Instagram"><img src="img/instagram.png" alt="Instagram" width="50" /></a></li>
+                    <li><a href="#" target="_blank" title="Facebook"><img src="img/facebook.png" alt="Facebook" width="50" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center"><small>Tecnologías Web - 2023</small></p>
     </footer>
 </body>
 </html>

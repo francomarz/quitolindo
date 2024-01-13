@@ -3,118 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../favicon.png">
     <title>Quito Lindo | Rutas de Aventura</title>
 </head>
 <body>
-    <header>
-        <a href="../index.html"><img src="../img/logo-quito-lindo.png" alt="logo-quito-lindo" width="200" /></a>
-        <span><a href="../login.html">Iniciar Sesión</a></span> 
-        <span><a href="#"><strong>Registrarme</strong></a></span>
-        <nav id="nav-principal">
-            <ul>
-                <li><a href="atractivos.html">Atractivos</a></li>
-                <li><a href="rutas.html">Rutas</a></li>
-                <li><a href="experiencias.html">Experiencias</a></li>
+    <header class="container odd-row">
+        <div class="col">
+            <a href="../index.html"><img src="../img/logo-quito-lindo.png" alt="logo-quito-lindo" class="logo img-responsive" /></a>
+        </div>
+        <div class="col">
+            <ul class="nav nav-secundaria">
+                <li><a href="../login.html">Iniciar Sesión</a></li>
+                <li><a href="#"><strong>Registrarme</strong></a></li>
             </ul>
-        </nav>
-        <ul id="breadcrumb">
-            <li><a href="../index.html">Inicio</a></li>
-            <li>Rutas de aventura</li>
-        </ul>
+            <nav id="nav-principal">
+                <ul class="nav">
+                    <li><a href="atractivos.html">Atractivos</a></li>
+                    <li><a href="rutas.html" class="active">Rutas</a></li>
+                    <li><a href="experiencias.html">Experiencias</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section>
-        <h1>Rutas <br><small>de aventura</small></h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vomj35HdhYs?si=k9i_8uZc0yIXSawU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <p>Rutas de aventura le permitirá descubrir Quito de una manera guiada y en función de la ventura que desea vivir. Visitas culturales, la ruta de la Iglesias, Quito Colonial, Quito moderno. Usted elige la ruta.</p>
-    </section>
-    
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="#">Ruta de las Iglesias</a></li>
-                <li>Ruta de la Ciencia</li>
-                <li>Ruta de la Cultura</li>
-                <li>Ruta de la Gastronomía</li>
-                <li>Ruta de la Aventura</li>
-            </ul>
-            <a href="#">Más rutas</a>
-        </nav>
-    </aside>
-
-    <article>
-        <h2>Ruta de las Iglesias</h2>
-        <p>Dando la espalda al Panecillo, en sentido sur-norte puedes visitar las siguientes cruces ubicadas en los atrios de las iglesias del centro histórico de Quito.</p>
-        <ul>
-            <li><a href="#">Compartir</a></li>
-            <li><a href="#">Guardar</a></li>
-            <li><a href="#">Visitar</a></li>
-        </ul>
-        <hr>
-        <div>
-            <img src="../img/ruta-001-001.jpg" alt="ruta-001-001" width="150"/>
-            <h3>Primera cruz: Hospital psiquiátrico San Lázaro</h3>
-            <p>Donado a los jesuitas en 1587, más tarde este lugar se lo dispuso para el albergue de pobres, desvalidos y huérfanos posteriormente, en la era de la República, incorporaron un sección psiquiátrica. En su capilla, esquinera, se encuentra la primera cruz.<p>
-            <p>Desde este lugar, una  escalinata de piedra conduce al Panecillo, en quichua original se llamaba Yavirac.</p>
-        </div>
-
-        <div>
-            <img src="../img/ruta-001-002.jpg" alt="ruta-001-002" width="150"/>
-            <h3>Segunda cruz: Arco de la Reina</h3>
-            <p>La segunda cruz fue colocada en la actual calle Rocafuerte, en el Arco de la Reina, un sitio que brindaba techo a los devotos que se albergaban frente a la iglesia.</p>
-            <p>Su construcción fue autorizada por el cabildo en 1726, los devotos se protegían de la intemperie debajo de esta estructura construida con cal y canto, la pared es apoyada por dos pilares en un extremo y un sócalo de piedra que sirve como base.</p>
-        </div>
-
-        <div>
-            <img src="../img/ruta-001-003.jpg" alt="ruta-001-003" width="150"/>
-            <h3>Tercera cruz: Iglesia de la Compañia</h3>
-            <p>La tercera cruz resalta en la puerta de la fachada de piedra la Iglesia de la Compañia de Jesús.</p>
-            <p>Ubicada en la calle Sucre, esta  fachada de estilo barroco y simétrico por su ondulación con un tallado curvo en su columnas salomónicas, la construcción dentro y fuera de este templo reflejan el trabajo artístico artesanal indígena conjugado con la obra de arquitectos y escultores europeos. Los jesuitas iniciaron la construcción en 1605  y fue concluida en 1690.</p>
-        </div>
-
-        <div>
-            <img src="../img/ruta-001-004.jpg" alt="ruta-001-004" width="150"/>
-            <h3>Cuarta cruz: Iglesia del Sagrario</h3>
-            <p>La cuarta cruz  está en la entrada de la iglesia El Sagrario.</p>
-            <p>Ubicada cerca de la calle Espejo, este templo fue edificado en 1699. Era para uso exclusivo de los españoles y los criollos. En sus paredes están colocadas varias placas que recuerdan algunos hechos memorables para la ciudad.</p>
-        </div>
+    <div class="container bg-white p-1">
+        <h1>Rutas <br><small class="subtitle">de aventura</small></h1>
+        <section class="container even-row">
+            <div class="col">
+                <iframe src="https://www.youtube.com/embed/vomj35HdhYs?si=k9i_8uZc0yIXSawU" title="YouTube video player" class="img-responsive" height="400px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col"><p>Rutas de aventura le permitirá descubrir Quito de una manera guiada y en función de la ventura que desea vivir. Visitas culturales, la ruta de la Iglesias, Quito Colonial, Quito moderno. Usted elige la ruta.</p></div>
+        </section>
         
-        <div>
-            <img src="../img/ruta-001-005.jpg" alt="ruta-001-005" width="150"/>
-            <h3>Quinta cruz: Iglesia de la Catedral</h3>
-            <p>La quinta cruz se levantó en la entrada de la iglesia La Catedral.</p>
-            <p>En la esquina de la calle Eugenio Espejo, es considerada como la cruz mayor, La Catedral fue construida en 1535  con paredes de barro y la cubierta de paja,10 años después fue nombrada La Catedral, en 1562 se la derribó para reconstruirla con bases de piedra.</p>
-            <p>La construcción de la iglesia culminó en 1806, por obra del Presidente de la Real Audiencia, Barón Héctor de Carondelet.</p>
-            <p>Esta Cruz mayor fue consagrada con la construcción de la Catedral en 1572.</p>
-            <p>Se afirma que la estatua de un gallo, ubicada en los atrios de La Catedral, cobra vida para atacar a los hombres borrachos que pasan por ahí y osan insultarlo en las noches o madrugadas.</p>
+        <div class="container odd-row my-3">
+            <aside>
+                <ul class="nav-aside">
+                    <li><a href="#" class="active">Ruta de las Iglesias</a></li>
+                    <li>Ruta de la Ciencia</li>
+                    <li>Ruta de la Cultura</li>
+                    <li>Ruta de la Gastronomía</li>
+                    <li>Ruta de la Aventura</li>
+                </ul>
+                <p class="text-center my-3"><a href="#">Más rutas</a></p>
+            </aside>
+
+            <article>
+                <h2>Ruta de las Iglesias</h2>
+                <p>Dando la espalda al Panecillo, en sentido sur-norte puedes visitar las siguientes cruces ubicadas en los atrios de las iglesias del centro histórico de Quito.</p>
+                <ul class="nav nav-secundaria">
+                    <li><a href="#">Compartir</a></li>
+                    <li><a href="#">Guardar</a></li>
+                    <li><a href="#">Visitar</a></li>
+                </ul>
+
+                <div class="container odd-row my-3">
+                    <div class="col"><img src="../img/ruta-001-001.jpg" alt="ruta-001-001" width="150" class="img-rounded shadow"/></div>
+                    <div class="col resume boxed shadow">
+                        <h3>1. Primera cruz: Hospital psiquiátrico San Lázaro</h3>
+                        <p>Donado a los jesuitas en 1587, más tarde este lugar se lo dispuso para el albergue de pobres, desvalidos y huérfanos posteriormente, en la era de la República, incorporaron un sección psiquiátrica. En su capilla, esquinera, se encuentra la primera cruz.<p>
+                        <p>Desde este lugar, una  escalinata de piedra conduce al Panecillo, en quichua original se llamaba Yavirac.</p>
+                    </div>
+                </div>
+        
+                <div class="container odd-row my-3">
+                    <div class="col"><img src="../img/ruta-001-002.jpg" alt="ruta-001-002" width="150" class="img-rounded shadow"/></div>
+                    <div class="col resume boxed shadow">
+                        <h3>2. Segunda cruz: Arco de la Reina</h3>
+                        <p>La segunda cruz fue colocada en la actual calle Rocafuerte, en el Arco de la Reina, un sitio que brindaba techo a los devotos que se albergaban frente a la iglesia.</p>
+                        <p>Su construcción fue autorizada por el cabildo en 1726, los devotos se protegían de la intemperie debajo de esta estructura construida con cal y canto, la pared es apoyada por dos pilares en un extremo y un sócalo de piedra que sirve como base.</p>
+                    </div>
+                </div>
+        
+                <div class="container odd-row my-3">
+                    <div class="col"><img src="../img/ruta-001-003.jpg" alt="ruta-001-003" width="150" class="img-rounded shadow"/></div>
+                    <div class="col resume boxed shadow">
+                        <h3>3. Tercera cruz: Iglesia de la Compañia</h3>
+                        <p>La tercera cruz resalta en la puerta de la fachada de piedra la Iglesia de la Compañia de Jesús.</p>
+                        <p>Ubicada en la calle Sucre, esta  fachada de estilo barroco y simétrico por su ondulación con un tallado curvo en su columnas salomónicas, la construcción dentro y fuera de este templo reflejan el trabajo artístico artesanal indígena conjugado con la obra de arquitectos y escultores europeos. Los jesuitas iniciaron la construcción en 1605  y fue concluida en 1690.</p>
+                    </div>
+                </div>
+        
+                <div class="container odd-row my-3">
+                    <div class="col"><img src="../img/ruta-001-004.jpg" alt="ruta-001-004" width="150" class="img-rounded shadow"/></div>
+                    <div class="col resume boxed shadow">
+                        <h3>4. Cuarta cruz: Iglesia del Sagrario</h3>
+                        <p>La cuarta cruz  está en la entrada de la iglesia El Sagrario.</p>
+                        <p>Ubicada cerca de la calle Espejo, este templo fue edificado en 1699. Era para uso exclusivo de los españoles y los criollos. En sus paredes están colocadas varias placas que recuerdan algunos hechos memorables para la ciudad.</p>
+                    </div>
+                </div>
+                
+                <div class="container odd-row my-3">
+                    <div class="col"><img src="../img/ruta-001-005.jpg" alt="ruta-001-005" width="150" class="img-rounded shadow"/></div>
+                    <div class="col resume boxed shadow">
+                        <h3>5. Quinta cruz: Iglesia de la Catedral</h3>
+                        <p>La quinta cruz se levantó en la entrada de la iglesia La Catedral.</p>
+                        <p>En la esquina de la calle Eugenio Espejo, es considerada como la cruz mayor, La Catedral fue construida en 1535  con paredes de barro y la cubierta de paja,10 años después fue nombrada La Catedral, en 1562 se la derribó para reconstruirla con bases de piedra.</p>
+                        <p>La construcción de la iglesia culminó en 1806, por obra del Presidente de la Real Audiencia, Barón Héctor de Carondelet.</p>
+                        <p>Esta Cruz mayor fue consagrada con la construcción de la Catedral en 1572.</p>
+                        <p>Se afirma que la estatua de un gallo, ubicada en los atrios de La Catedral, cobra vida para atacar a los hombres borrachos que pasan por ahí y osan insultarlo en las noches o madrugadas.</p>
+                    </div>
+                </div>
+        
+                <div class="container odd-row my-3">
+                    <div class="col"><img src="../img/ruta-001-006.jpg" alt="ruta-001-006" width="150" class="img-rounded shadow"/></div>
+                    <div class="col resume boxed shadow">
+                        <h3>6. Sexta cruz: Iglesia de la Inmaculada Concepción</h3>
+                        <p>La sexta cruz resalta en el fondo exterior de los muros blancos de la iglesia La Inmaculada Concepción</p>
+                        <p>Ubicada en la esquina de la calle Chile, fundada en 1577, allí funcionó el primer Monasterio de Quito, la construcción tienen dos entradas una en la García Moreno y otra en la Chile su piso es de piedra y al fondo se divisa atrio de madera.</p>
+                        <p>El claustro de la enfermería fue restaurado obteniendo la mención bienal de arquitectura de Quito 2002.</p>
+                    </div>
+                </div>
+        
+                <div class="container odd-row my-3">
+                    <div class="col"><img src="../img/ruta-001-007.jpg" alt="ruta-001-007" width="150" class="img-rounded shadow"/></div>
+                    <div class="col resume boxed shadow">
+                        <h3>7. Séptima cruz: Iglesia de Santa Bárbara</h3>
+                        <p>La séptima cruz ubicada en la iglesia de Santa Bárbara en la calle Manabí.</p>
+                        <p>Fue edificada en 1550 emblema de  lucha del pueblo quiteño, fundada 1581 esta edificación se eleva respecto al nivel de la vereda, fue ocupado por los agustinos y luego los jesuitas en 1892, la cruz fue retirada y posteriormente fue reincorporada en el siglo veinte.</p>
+                    </div>
+                </div>
+            </article>
+
         </div>
 
-        <div>
-            <img src="../img/ruta-001-006.jpg" alt="ruta-001-006" width="150"/>
-            <h3>Sexta cruz: Iglesia de la Inmaculada Concepción</h3>
-            <p>La sexta cruz resalta en el fondo exterior de los muros blancos de la iglesia La Inmaculada Concepción</p>
-            <p>Ubicada en la esquina de la calle Chile, fundada en 1577, allí funcionó el primer Monasterio de Quito, la construcción tienen dos entradas una en la García Moreno y otra en la Chile su piso es de piedra y al fondo se divisa atrio de madera.</p>
-            <p>El claustro de la enfermería fue restaurado obteniendo la mención bienal de arquitectura de Quito 2002.</p>
-        </div>
+    </div>
 
-        <div>
-            <img src="../img/ruta-001-007.jpg" alt="ruta-001-007" width="150"/>
-            <h3>Séptima cruz: Iglesia de Santa Bárbara</h3>
-            <p>La séptima cruz ubicada en la iglesia de Santa Bárbara en la calle Manabí.</p>
-            <p>Fue edificada en 1550 emblema de  lucha del pueblo quiteño, fundada 1581 esta edificación se eleva respecto al nivel de la vereda, fue ocupado por los agustinos y luego los jesuitas en 1892, la cruz fue retirada y posteriormente fue reincorporada en el siglo veinte.</p>
+    <footer class="container footer bg-dark">
+        <img src="../img/footer.jpg" alt="footer" class="img-responsive" />
+        <div class="half-row">
+            <div class="col">
+                <p>Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
+            </div>
+            <div class="col text-center">
+                <p>Visita nuestras redes sociales</p>
+                <ul class="nav">
+                    <li><a href="#" target="_blank" title="Instagram"><img src="../img/instagram.png" alt="Instagram" width="50" /></a></li>
+                    <li><a href="#" target="_blank" title="Facebook"><img src="../img/facebook.png" alt="Facebook" width="50" /></a></li>
+                </ul>
+            </div>
         </div>
-    </article>
-
-    <footer>
-        <img src="../img/footer.jpg" alt="footer" />
-        <p>Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
-        <ul>
-            <li><a href="#" target="_blank" title="Instagram"><img src="../img/instagram.png" alt="Instagram" width="50" /></a></li>
-            <li><a href="#" target="_blank" title="Facebook"><img src="../img/facebook.png" alt="Facebook" width="50" /></a></li>
-            <li><a href="#" target="_blank" title="X"><img src="../img/X-black.png" alt="X" width="50" /></a></li>
-        </ul>
-        <p>Tecnologías Web - 2023</p>
+        <p class="text-center"><small>Tecnologías Web - 2023</small></p>
     </footer>
 </body>
 </html>
