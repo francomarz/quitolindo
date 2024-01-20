@@ -3,91 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../favicon.png">
     <title>Quito Lindo | Atractivos Turísticos</title>
 </head>
 <body>
-    <header class="container odd-row">
-        <div class="col">
-            <a href="../index.html"><img src="../img/logo-quito-lindo.png" alt="logo-quito-lindo" class="logo img-responsive" /></a>
-        </div>
-        <div class="col">
-            <ul class="nav nav-secundaria">
-                <li><a href="../login.html">Iniciar Sesión</a></li>
-                <li><a href="#"><strong>Registrarme</strong></a></li>
-            </ul>
-            <nav id="nav-principal">
-                <ul class="nav">
-                    <li><a href="atractivos.html" class="active">Atractivos</a></li>
-                    <li><a href="rutas.html">Rutas</a></li>
-                    <li><a href="experiencias.html">Experiencias</a></li>
+    <header class="container">
+        <div class="row">
+            <div class="col-md-2"><a href="../index.html"><img src="../img/logo-quito-lindo.png" alt="logo-quito-lindo" class="img-fluid"/></a></div>
+            <div class="col-md-10 align-self-center">
+                <ul class="nav justify-content-end" style="border-bottom: solid 1px #CCC;">
+                    <li class="nav-item"><a class="nav-link link-dark" aria-current="page" href="../login.html">Iniciar Sesión</a></li>
+                    <li class="nav-item"><a class="nav-link link-dark" href="#"><strong>Registrarme</strong></a></li>
                 </ul>
-            </nav>
+                <nav class="navbar navbar-expand-lg bg-transparent">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="atractivos.html">Atractivos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="rutas.html">Rutas</a></li>
+                                <li class="nav-item"><a class="nav-link" href="experiencias.html">Experiencias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
     
-    <div class="container bg-white">
-        <section class="my-3">
-            <h1>La Mitad del mundo</h1>
-            <iframe src="https://www.youtube.com/embed/zQAuV_PGqCM?si=gFtSttHd7qm0u4mj" title="YouTube video player" class="img-responsive" height="480px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="container">
+        <section class="my-5">
+            <h1 class="my-4 text-center text-lg-start">La Mitad del mundo</h1>
+            <div class="ratio ratio-16x9 mb-5">
+                <iframe src="https://www.youtube.com/embed/zQAuV_PGqCM?si=gFtSttHd7qm0u4mj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
             <p>La Ciudad Mitad del Mundo es un complejo turístico y cultural propiedad de la prefectura de la provincia de Pichincha. Está situado en la parroquia de San Antonio del Distrito Metropolitano de Quito, al norte de la ciudad de Quito.</p>
             <p>La principal atracción del lugar es el monumento a la Mitad del Mundo, que tiene como finalidad resaltar la ubicación exacta de la línea ecuatorial, del cual el país toma su nombre, y destacar la misión geodésica franco-española del siglo xviii que ubicó el sitio aproximado por el cual pasa la línea equinoccial.</p>
             <p>También se encuentra el Museo Etnográfico Mitad del Mundo, un museo sobre la etnografía indígena de Ecuador. Una pequeña ciudad que rodea el monumento actúa como centro turístico, ofreciendo una réplica de una ciudad colonial española llamada "Ciudad Mitad del Mundo".</p>
-            <ul class="nav nav-secundaria">
-                <li><a href="#">Compartir</a></li>
-                <li><a href="#">Guardar</a></li>
-                <li><a href="https://maps.app.goo.gl/XjvXwd49VpGz4YKv6" target="_blank">Visitar</a></li>
+            <ul class="nav align-items-center justify-content-end" style="border-bottom: solid 1px #CCC;">
+                <li class="nav-item"><a href="#" class="nav-link link-dark" target="_blank">Compartir</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark" target="_blank">Guardar</a></li>
+                <li class="nav-item"><a href="https://maps.app.goo.gl/XjvXwd49VpGz4YKv6" class="nav-link link-dark">Compartir</a></li>
             </ul>
+
         </section>
     
-        <h2>Atracciones</h2>
-        <section class="container odd-row">
-            <div class="col"><img src="../img/atractivo-002-002.jpg" alt="atractivo-002-002" class="img-responsive" /></div>
-            <div class="col text-justify">
-                <h3>El monumento a la Mitad del Mundo</h3>
+        <h2 class="my-4 text-center text-lg-start">Atracciones</h2>
+        <section class="row align-items-center my-5">
+            <div class="col-md-4 mb-3 text-center"><img src="../img/atractivo-002-002.jpg" alt="atractivo-002-002" class="img-fluid" /></div>
+            <div class="col-md-8">
+                <h3 class="text-center text-lg-start">El monumento a la Mitad del Mundo</h3>
                 <p>En 1936, con el apoyo del Comité Franco-Americano, el geógrafo ecuatoriano Luis Tufiño, localizó las señales dejadas por la misión geodésica del siglo xviii. Con base en ese hallazgo se construyó un monumento de 10 metros de alto en San Antonio de Pichincha. En 1979 el monumento fue trasladado 7 km al oeste, a la ciudad de Calacalí.</p>
                 <p>Entre 1979 y 1982 fue construido un monumento de 30 metros de altura (réplica del monumento que fue trasladado a Calacalí) para marcar el punto donde se creía que el Ecuador atravesaba el país en aquel momento. De hecho, se trazó una línea desde el centro de la escalera que da al este, atravesando la plaza para marcar el ecuador, y a lo largo de los años incontables turistas se han fotografiado cruzando la línea. Sin embargo, realmente toda la estructura se encuentra a aproximadamente 240 m al sur del verdadero ecuador (sobre el paralelo 0º 0' 7.83" latitud Sur) gracias a la aparición de la tecnología GPS, a finales del siglo xx.</p>
                 <p>El monumento piramidal, con cada lado apuntando a una dirección cardinal, está hecho de hierro y cemento y cubierto de piedra tallada y pulida de andesita y rematado por un globo terráqueo de 4.5 m de diámetro y 5 toneladas. Dentro del monumento hay un pequeño museo que muestra elementos de la cultura indígena de Ecuador, como vestimenta, descripciones de los diversos grupos étnicos, y muestras de sus actividades.</p>
             </div>
         </section>
     
-        <h2>Otras atracciones</h2>
-        <section class="container even-row">
-            <div class="col text-justify">
+        <h2 class="my-4 text-center text-lg-start">Otras atracciones</h2>
+        <section class="row align-items-center my-5">
+            <div class="col-md-8">
                 <p>Ciudad Mitad del Mundo desde el oeste a 30 metros desde la terraza del museo.</p>
                 <p>Dentro de la Ciudad Mitad del Mundo existen cuatro pabellones con exposiciones permanentes. El Pabellón Guayasamín el cual posee una exposición de diferentes obras del famoso pintor ecuatoriano Oswaldo Guayasamín.</p>
                 <p>Otro de los pabellones es Pabellón de Francia, donde se encuentra el Museo Geodésico Francés. En este se exhibe toda la información sobre los estudios de la Misión Geodésica e información sobre la Academia de Ciencias de París. También está el Pabellón del Sol donde se expone información sobre las ciudades de Guayaquil y Cuenca, las dos ciudades más importantes del Ecuador aparte de su capital, Quito.</p>
                 <p>Otros atractivos turísticos permanentes son el Planetario, una maqueta de todo el Quito colonial en miniatura, y el Insectarium: el Primer Museo Entomológico del Ecuador, donde se está recopilando toda la inmensa y diversa entomofauna existente en Ecuador. Hay exposiciones de insectos vivos y disecados.</p>
                 <p>Además de estas atracciones permanentes, los fines de semana y festivos siempre se realizan festivales musicales, presentaciones de danza y otras expresiones artísticas en la plaza del pueblo.</p>
             </div>
-            <div class="col"><img src="../img/atractivo-002-001.jpg" alt="atractivo-002-001" class="img-responsive" /></div>
+            <div class="col-md-4 mb-3 text-center"><img src="../img/atractivo-002-001.jpg" alt="atractivo-002-001" class="img-fluid" /></div>
         </section>
-        <p class="text-center"><a href="atractivos.html">< Volver</a></p>
+        <p class="text-center"><a href="atractivos.html" class="link-dark">< Volver</a></p>
     </div>
     
-    <footer class="container footer bg-dark">
-        <img src="../img/footer.jpg" alt="footer" class="img-responsive" />
-        <div class="half-row">
-            <div class="col">
-                <p>Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
+    <footer class="container g-0 bg-dark text-light">
+        <img src="../img/footer.jpg" alt="footer" class="img-fluid" />
+        <div class="row pt-5 px-5">
+            <div class="col-md-6">
+                <p class="text-center text-lg-start">Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
+                <p class="text-center text-lg-start"><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"  alt="¡CSS Válido!" /></a></p>
             </div>
-            <div class="col text-center">
-                <p>Visita nuestras redes sociales</p>
-                <ul class="nav">
-                    <li><a href="#" target="_blank" title="Instagram"><img src="../img/instagram.png" alt="Instagram" width="50" /></a></li>
+            <div class="col-md-6">
+                <p class="text-center text-lg-end">Visita nuestras redes sociales</p>
+                <ul class="nav justify-content-center justify-content-lg-end">
+                    <li class="me-3"><a href="#" target="_blank" title="Instagram"><img src="../img/instagram.png" alt="Instagram" width="50" /></a></li>
                     <li><a href="#" target="_blank" title="Facebook"><img src="../img/facebook.png" alt="Facebook" width="50" /></a></li>
                 </ul>
             </div>
-            <p>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px"
-                        src="http://jigsaw.w3.org/css-validator/images/vcss"
-                        alt="¡CSS Válido!" />
-                </a>
-            </p>
+            <p class="text-center"><small>Tecnologías Web - 2023</small></p>
         </div>
-        <p class="text-center"><small>Tecnologías Web - 2023</small></p>
     </footer>
+    <!-- js bootstrap components-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

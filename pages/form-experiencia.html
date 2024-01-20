@@ -3,64 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" type="image/png" href="../favicon.png">
     <title>Quito Lindo | Experiencias</title>
 </head>
 <body>
-    <header class="container odd-row">
-        <div class="col">
-            <a href="../index.html"><img src="../img/logo-quito-lindo.png" alt="logo-quito-lindo" class="logo img-responsive" /></a>
-        </div>
-        <div class="col">
-            <ul class="nav nav-secundaria">
-                <li><a href="../login.html">Iniciar Sesión</a></li>
-                <li><a href="#"><strong>Registrarme</strong></a></li>
-            </ul>
-            <nav id="nav-principal">
-                <ul class="nav">
-                    <li><a href="atractivos.html">Atractivos</a></li>
-                    <li><a href="rutas.html">Rutas</a></li>
-                    <li><a href="experiencias.html" class="active">Experiencias</a></li>
+    <header class="container">
+        <div class="row">
+            <div class="col-md-2"><a href="../index.html"><img src="../img/logo-quito-lindo.png" alt="logo-quito-lindo" class="img-fluid"/></a></div>
+            <div class="col-md-10 align-self-center">
+                <ul class="nav justify-content-end" style="border-bottom: solid 1px #CCC;">
+                    <li class="nav-item"><a class="nav-link link-dark" aria-current="page" href="../login.html">Iniciar Sesión</a></li>
+                    <li class="nav-item"><a class="nav-link link-dark" href="#"><strong>Registrarme</strong></a></li>
                 </ul>
-            </nav>
+                <nav class="navbar navbar-expand-lg bg-transparent">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="atractivos.html">Atractivos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="rutas.html">Rutas</a></li>
+                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="experiencias.html">Experiencias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
     <section class="container">
-        <h1>Compartir experiencia</h1>
+        <h1 class="my-4 text-center text-lg-start">Compartir experiencia</h1>
         <p>Agradecemos que compartas tu experiencia de viaje con otras personas, esto ayuda a que otros visitantes puedan tener más claro que visitar.</p>
         <form action="form-experiencia.html" method="post">
             <fieldset>
-                <legend>Ingresa la siguiente información</legend>
-                <div>
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" placeholder="usuario@email.com" autofocus required>
+                <p>Ingresa la siguiente información</p>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="usuario@email.com" autofocus required>
                 </div>
-                <div>
-                    <label for="categoria">Selecciona una categoría de experiencia:</label><br>
-                    <select id="categoria" name="categoria" required>
+                <div class="input-group mb-3">
+                    <label for="categoria" class="input-group-text">Selecciona una categoría de experiencia:</label><br>
+                    <select id="categoria" class="form-select" name="categoria" required>
                         <option value="hospedaje">Hospedaje</option>
                         <option value="transporte">Transporte</option>
                         <option value="bares-discotecas">Bares y discotecas</option>
                         <option value="zonas-turisticas">Zonas turísticas</option>
                     </select>
                 </div>
-                <div>
-                    <label for="imagen">Cargar imagen del lugar:</label><br>
-                    <input type="file" id="imagen" name="imagen" accept=".jpg, .jpeg, .png">
+                <div class="mb-3">
+                    <label for="imagen" class="form-label">Cargar imagen del lugar:</label><br>
+                    <input type="file" id="imagen" name="imagen" class="form-control" accept=".jpg, .jpeg, .png">
                 </div>
-                <div>
-                    <label for="web">Página Web del lugar que visitaste (opcional):</label><br>
-                    <input type="url" id="web" name="web" placeholder="Dirección Web">
+                <div class="mb-3">
+                    <label for="web" class="form-label">Página Web del lugar que visitaste (opcional):</label><br>
+                    <input type="url" id="web" name="web" class="form-control" placeholder="Dirección Web">
                 </div>
-                <div>
-                    <label for="ubicacion">Ubicación del lugar en Google Maps (opcional):</label><br>
-                    <input type="url" id="ubicacion" name="ubicacion" placeholder="Ubicacion Google Maps">
+                <div class="mb-3">
+                    <label for="ubicacion" class="form-label">Ubicación del lugar en Google Maps (opcional):</label><br>
+                    <input type="url" id="ubicacion" name="ubicacion" class="form-control" placeholder="Ubicacion Google Maps">
                 </div>
-                <div>
-                    <label for="valoracion">Valoración:</label><br>
-                    <select id="valoracion" name="valoracion" required>
+
+                <div class="input-group mb-3">
+                    <label for="valoracion" class="input-group-text">Valoración:</label>
+                    <select class="form-select" id="valoracion" name="valoracion">
                         <option value="5">5 estrellas</option>
                         <option value="4">4 estrellas</option>
                         <option value="3">3 estrellas</option>
@@ -68,44 +78,42 @@
                         <option value="1">1 estrella</option>
                     </select>
                 </div>
-                <div>
-                    <label for="resena">Describe tu experiencia:</label>
-                    <p><small>Cuéntanos con detalle qué cosas fueron geniales y qué cosas no lo fueron.</small></p>
-                    <textarea name="resena" required></textarea>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Describe tu experiencia:</span>
+                    <textarea name="resena" class="form-control" aria-label="resena" placeholder="Cuéntanos con detalle qué cosas fueron geniales y qué cosas no lo fueron." required></textarea>
                 </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-text">
+                      <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Política de privacidad">
+                    </div>
+                    <div class="form-control">Acepto la <a href="#" target="_blank" class="btn-dark">política de privacidad</a> sobre los datos recopilados mediante este formulario</div>
+                  </div>
     
-                <div>
-                    <input type="checkbox" id="privacidad" name="privacidad" value="si" required>
-                    <label for="privacidad"> Acepto la <a href="#" target="_blank">política de privacidad</a> sobre los datos recopilados mediante este formulario</label><br>
-                </div>
-    
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" class="btn btn-dark">
               </fieldset>
           </form>
     </section>
 
-    <footer class="container footer bg-dark">
-        <img src="../img/footer.jpg" alt="footer" class="img-responsive" />
-        <div class="half-row">
-            <div class="col">
-                <p>Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
+    <footer class="container g-0 bg-dark text-light">
+        <img src="../img/footer.jpg" alt="footer" class="img-fluid" />
+        <div class="row pt-5 px-5">
+            <div class="col-md-6">
+                <p class="text-center text-lg-start">Franco López Hidalgo <br>Universidad Técnica Particular de Loja</p>
+                <p class="text-center text-lg-start"><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"  alt="¡CSS Válido!" /></a></p>
             </div>
-            <div class="col text-center">
-                <p>Visita nuestras redes sociales</p>
-                <ul class="nav">
-                    <li><a href="#" target="_blank" title="Instagram"><img src="../img/instagram.png" alt="Instagram" width="50" /></a></li>
+            <div class="col-md-6">
+                <p class="text-center text-lg-end">Visita nuestras redes sociales</p>
+                <ul class="nav justify-content-center justify-content-lg-end">
+                    <li class="me-3"><a href="#" target="_blank" title="Instagram"><img src="../img/instagram.png" alt="Instagram" width="50" /></a></li>
                     <li><a href="#" target="_blank" title="Facebook"><img src="../img/facebook.png" alt="Facebook" width="50" /></a></li>
                 </ul>
             </div>
-            <p>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                    <img style="border:0;width:88px;height:31px"
-                        src="http://jigsaw.w3.org/css-validator/images/vcss"
-                        alt="¡CSS Válido!" />
-                </a>
-            </p>
+            <p class="text-center"><small>Tecnologías Web - 2023</small></p>
         </div>
-        <p class="text-center"><small>Tecnologías Web - 2023</small></p>
     </footer>
+    <!-- js bootstrap components-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
